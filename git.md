@@ -18,10 +18,10 @@ Step-by-Step:
         Open your terminal or command prompt.
 
         Type the following, replacing <repository-url> with the URL you copied:
-
-bash
+ex:
+```bash
 git clone https://github.com/taj950/MultiSandBox.git
-
+```
     This creates a local copy of the repository on your machine
 
     .
@@ -30,14 +30,16 @@ git clone https://github.com/taj950/MultiSandBox.git
 
 Set Your Username and Email (Required for Commits):
 
-bash
+```bash
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
-
+```
+ex:
+```bash
+git config --global user.name "taj950"
+git config --global user.name .email"taj95020@ gmail.com"
+```
     --global applies these settings to all repositories on your computer
-
-.
-
 Tip: You can also set these per repository by omitting --global and running the command inside the repository directory
 
     .
@@ -54,9 +56,9 @@ Step-by-Step:
 
         Add a specific file:
 
-bash
+```bash
 git add filename
-
+```
 Add all files in the current directory:
 
         bash
@@ -73,13 +75,11 @@ Step-by-Step:
     2) Commit Your Changes
 
         To commit the staged changes with a message:
-```
-bash
+```bash
 git commit -m "Your commit message"
 ```
 ex:
-```
-bash
+```bash
 git commit -m "its ok now"
 ```
 This creates a snapshot of your current files and saves it with your message
