@@ -1,80 +1,107 @@
 # Git commands #
-## How to use git clone command 
-* 1 Obtain the Repository URL
+##1. How to Use git clone
 
-    Navigate to the repository’s main page on GitHub (or your preferred Git hosting service).
+Step-by-Step:
 
-    Click the Code button (usually green) above the list of files.
+    Obtain the Repository URL
 
-    Copy the URL provided (choose HTTPS or SSH, depending on your setup)
-* 2 Run the git clone Command
+        Go to the repository’s main page on GitHub (or your preferred Git hosting service).
 
-    Type the following, replacing <repository-url> with the URL you copied:
-    git clone <repository-url> 
-    done.
-## How to git config 
-* 1 Set your username and email (required for commits):
+        Click the Code button (usually green) above the list of files.
 
-  git config --global user.name "Your Name"
-  git config --global user.email "your.email@example.com"
+        Copy the URL provided (choose HTTPS or SSH as needed)
 
-    --global applies these settings to all repositories for your project--
-## How to use git add ##
-* 1 To use git add, follow these steps:
+        .
 
-    Check Your Changes
-    Run git status to see which files are new, modified, or deleted in your working directory
+    Run the git clone Command
+
+        Open your terminal or command prompt.
+
+        Type the following, replacing <repository-url> with the URL you copied:
+
+bash
+git clone https://github.com/taj950/MultiSandBox.git
+
+    This creates a local copy of the repository on your machine
+
+    .
+
+##2. How to Use git config
+
+Set Your Username and Email (Required for Commits):
+
+bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+    --global applies these settings to all repositories on your computer
 
 .
 
-* 2 Add Files to the Staging Area
+Tip: You can also set these per repository by omitting --global and running the command inside the repository directory
 
-    Add a specific file:
-   git add filename
+    .
 
-* 3 Add all files in the current directory
-  git add 
-## How to use git commit ##Push Your Commits
+##3. How to Use git add
 
-    To push your current branch to the remote repository:
+Step-by-Step:
+
+    Check Your Changes
+
+        Run git status to see which files are new, modified, or deleted.
+
+    Add Files to the Staging Area
+
+        Add a specific file:
 
 bash
+git add filename
+
+Add all files in the current directory:
+
+        bash
+        git add .
+
+##4. How to Use git commit
+
+Step-by-Step:
+
+   1) Stage Your Changes
+
+        Use git add <file> or git add . as above.
+
+    2) Commit Your Changes
+
+        To commit the staged changes with a message:
+```
+bash
+git commit -m "Your commit message"
+```
+ex:
+```
+bash
+git commit -m "its ok now"
+```
+This creates a snapshot of your current files and saves it with your message
+
+ Note: If you omit -m, Git will open your default text editor for a longer message.
+
+##5. How to Use git push
+
+Push Your Commits to the Remote Repository:
+ex:
+```bash
 git push origin main
+```
+    Replace main with your branch name if different.
 
-(Replace main with your branch name if different.)
- * 1 To use git commit, follow these steps:
+##6. How to Use git status
 
-    Stage Your Changes
-
-        Before committing, add your changes to the staging area using:
-
-bash
-git add <file>
-
-Or add all changes:
-
-    bash
-    git add .
-* 2 Commit Your Changes
-
-    To commit the staged changes with a message, use:
-
- git commit -m "Your commit message"
-
-  This creates a snapshot of your current files and saves it to your repository with a descriptive message
-
-  Note: If you omit -m, Git will open your default text editor for you to write a longer commit message
-## how to use git status ##
- Run the command:
-  git status
- ## how to use git 
-
-
-
-
-  
-
-
+Check the Status of Your Repository:
+ex:
+```bash
+git status
+```
 
 
 ### 
