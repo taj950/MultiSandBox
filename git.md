@@ -19,7 +19,7 @@ Step-by-Step:
 
         Type the following, replacing <repository-url> with the URL you copied:
 ex:
-```bash
+```
 git clone https://github.com/taj950/MultiSandBox.git
 ```
     This creates a local copy of the repository on your machine
